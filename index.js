@@ -14,15 +14,15 @@ function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case "get":
-      getContactById(id)
+      getContactById(id);
       break;
 
     case "add":
-      addContact(name,email,phone)
+      addContact(name, email, phone);
       break;
 
     case "remove":
-      removeContact(id)
+      removeContact(id);
       break;
 
     default:
@@ -30,4 +30,4 @@ function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv)
+invokeAction(argv);
